@@ -25,11 +25,11 @@
 	<script>
   	//Using cookie presence to avoid tracking an employee. Only capture sessions when the cookie is not present
 		$(document).ready(function () {
-			if (
-				document.cookie.split(";").some((item) => item.trim().startsWith("employee="))
-			) {
+			if (document.cookie.split(";").some((item) => item.trim().startsWith("employee="))) {
     		console.log('The cookie "employee" exists - no Hotjar');
-  		} else {console.log('The cookie "employee" does not exist - start Hotjar');}
+  		} else {
+        console.log('The cookie "employee" does not exist - start Hotjar');
+      }
 		});
   </script>
   </body>
