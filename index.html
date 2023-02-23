@@ -17,8 +17,8 @@
 			if (
 				document.cookie.split(";").some((item) => item.trim().startsWith("employee="))
 			) {
-    		console.log('The cookie "employee" exists');
-  		}
+    		console.log('The cookie "employee" exists - no Hotjar');
+  		} else {console.log('The cookie "employee" does not exist - start Hotjar');}
 		});
   </script>
   </body>
