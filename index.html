@@ -34,6 +34,7 @@
 	if (!document.cookie.match(/^(.*;)?\s*employee\s*=\s*[^;]+(.*)?$/)) {
 console.log('The cookie "employee" does not exist - start session capture');
 	hj('event', 'start_hotjar');
+} else {console.log('The cookie "employee" does not exist - start Hotjar');
 }
 	}
 	  </script>
