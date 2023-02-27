@@ -29,6 +29,8 @@
     		console.log('The cookie "employee" exists - no Hotjar');
   		} else {
         console.log('The cookie "employee" does not exist - start Hotjar');
+			hj('event', 'start_hotjar');
+
       }
 		});
   </script>
